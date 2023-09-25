@@ -25,12 +25,12 @@ Es un paradigma de programación (es sólo una forma de expresar unos conceptos)
   - Generar un código más limpio / organizado
   - Reutilizar código
 - Programación funcional:       Cuando el lenguaje me permite que una variable referencie una función.
-  Y posteriormente invocar esa función desde la variable.
-  Para qué sirve.. o qué me permite?
-  Desde el momento que puedo hacer esas cosas de arriba...
-  - Puedo crear funciones que reciben funciones como parámetros  ** COMPLEJO
-  - Puedo crear funciones que devuelven funciones como resultado ** COMPLEJO
-  Y aquí es donde TODO se convierte en caos.
+      Y posteriormente invocar esa función desde la variable.
+      Para qué sirve.. o qué me permite?
+      Desde el momento que puedo hacer esas cosas de arriba...
+      - Puedo crear funciones que reciben funciones como parámetros  ** COMPLEJO
+      - Puedo crear funciones que devuelven funciones como resultado ** COMPLEJO
+      Y aquí es donde TODO se convierte en caos.
 - Programación orientada a objetos:     Cuando el lenguaje me permite definir mis propios Tipos de Datos.
   - Con sus propiedades (atributos)
   - Con sus métodos (funciones)
@@ -159,10 +159,10 @@ Hay un HUEVO DE FUNCIONES TIPO MAP, entre ellas:
 
                                      doble(numero) -> numero * 2
   COLECCION ORIGINAL   -> map(     FUNCION(parametro)-> Devolver algo       )  ->  COLECCION DE DATOS GENERADA
-  1                                                                                       2
-  2                                                                                       4
-  3                                                                                       6
-  4                                                                                       8
+    1                                                                                       2
+    2                                                                                       4
+    3                                                                                       6
+    4                                                                                       8
 
   Resumiendo: ME PERMITE TRANSFORMAR UN CONJUNTO DE DATOS AL APLICARLES A CADA UNO UNA DETERMINA FUNCION
 

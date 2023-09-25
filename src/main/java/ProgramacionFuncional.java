@@ -62,7 +62,14 @@ public class ProgramacionFuncional {
               .flatMap( Arrays::stream )                      //      Stream<Stream<String>>
               .forEach( System.out::println );
 
+        /*
+            Colección inicial                                       Colección final
+            "Buenos días"                   -> map(split(" "))      ["Buenos", "días"]                  ->      flatMap(Arrays::stream)       -> ["Buenos", "días", "Buenas", "tardes", "Buenas", "noches", "amigos"]
+            "Buenas tardes"                                         ["Buenas", "tardes"]
+            "Buenas noches amigos"                                  ["Buenas", "noches", "amigos"]
+        */
 
+        System.out.println("====================================================================================================");
         // Montar un programa que preprocese Tweets de Tweeter (X)
         // Para quedarme con los hashtag que no contengan palabra de una lista prohibida
         List<String> tweets = Arrays.asList(
@@ -75,7 +82,37 @@ public class ProgramacionFuncional {
                  "caca", "culo", "pedo", "pis"
          );
 
-         /*
+        List<String> hashtags = tweets.stream()                                                        // Para cada tweet
+                .filter( tweet -> tweet.contains("#") )                           // Me quedo con los que tienen hashtag
+                .map( tweet -> tweet.replace("#", " #"))     // Añadir un espacio delante del cuadradito
+                .map( tweet -> tweet.split("[ .,_+(){}!?¿'\"<>/@|&-]+"))   // Separo las palabras y los hashtags
+                // Aqui el editor (sonar) me dice que soy un PRINGAO ! que no cree una función que dado un String[] -> Stream..
+                // Ya que en el API de java, ya hay una que lo hace: Arrays::stream
+                //.flatMap( arrayDePalabrasDeUnTweet -> Arrays.stream(arrayDePalabrasDeUnTweet) ) // Convierto el array en un Stream
+                .flatMap( Arrays::stream )                                        // Convierto cada array en un Stream(map) y junto todos los streams en uno (flat)
+                .filter( palabra -> palabra.startsWith("#") )                     // Me quedo con los que empiezan por #
+                .map( hashtag -> hashtag.substring(1) )                // Quito el cuadradito
+                .map( String::toLowerCase )                                      // Convierto a minúsculas
+                .filter( hashtag -> prohibidas.stream().noneMatch( hashtag::contains ) ) // Me quedo con los que no contienen palabras de la lista de prohibidas
+                //.filter( hashtag -> prohibidas.stream().filter( palabraProhibida -> hashtag.contains(palabraProhibida) ).count() == 0 )
+                //.forEach( System.out::println );                                 // Al final sacar el resultado por pantalla
+                // REDUCE: Que se ejecuta en modo Eager
+                .collect(Collectors.toList()); // Lo convierto a una lista
+
+        List<String> hashtags2 = tweets.stream()                                 // Para cada tweet
+                .filter( tweet -> tweet.contains("#") )                           // Me quedo con los que tienen hashtag
+                .map( tweet -> tweet.replace("#", " #"))        // Añadir un espacio delante del cuadradito
+                .map( tweet -> tweet.split("[ .,_+(){}!?¿'\"<>/@|&-]+"))   // Separo las palabras y los hashtags
+                .flatMap( Arrays::stream )                                        // Convierto cada array en un Stream(map) y junto todos los streams en uno (flat)
+                .filter( palabra -> palabra.startsWith("#") )                     // Me quedo con los que empiezan por #
+                .map( hashtag -> hashtag.substring(1) )                // Quito el cuadradito
+                .map( String::toLowerCase )                                      // Convierto a minúsculas
+                .filter( hashtag -> prohibidas.stream().noneMatch( hashtag::contains ) ) // Me quedo con los que no contienen palabras de la lista de prohibidas
+                .collect(Collectors.toList());                                   // Lo convierto a una lista
+
+        hashtags2.forEach(System.out::println);
+
+        /*
          Resultado:  Una lista conteniendo:
           goodvibes
           goodvibes
