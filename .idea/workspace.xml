@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="hashtags v1.0">
+    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="hashtags listos para Spark">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notas/dia2.md" beforeDir="false" afterPath="$PROJECT_DIR$/notas/dia2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProcesarHashtagsConSpark">
+    <configuration name="ProcesarHashtagsConSpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProcesarHashtagsConSpark" />
+      <module name="Curso2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProgramacionFuncional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProgramacionFuncional" />
       <module name="Curso2" />
@@ -63,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProcesarHashtagsConSpark" />
         <item itemvalue="Application.ProgramacionFuncional" />
       </list>
     </recent_temporary>
@@ -76,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695310409809</updated>
       <workItem from="1695310411064" duration="7165000" />
-      <workItem from="1695646398130" duration="9193000" />
+      <workItem from="1695646398130" duration="11179000" />
     </task>
     <task id="LOCAL-00001" summary="hashtags v1.0">
       <option name="closed" value="true" />
@@ -86,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695652238226</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hashtags listos para Spark">
+      <option name="closed" value="true" />
+      <created>1695659458179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695659458179</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hashtags v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="hashtags v1.0" />
+    <MESSAGE value="hashtags listos para Spark" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashtags listos para Spark" />
   </component>
 </project>
