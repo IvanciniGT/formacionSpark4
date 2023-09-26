@@ -45,12 +45,15 @@ public class CalcularPIStream {
                 .map( numeroDeTrabajador -> dardosPorTrabajador ); // [250000, 250000, 250000, 250000 ]
 
 */
-        final int totalDeDardos = 1000 * 1000 * 1000;
-        long numeroDeDardosDentro = IntStream.range(0, totalDeDardos)                                            // Identifico cada dardo      [0, 1, 2, 3,... 999999999]
-                //.parallel()
-                .mapToDouble(numeroDeDardo -> Math.sqrt( Math.pow(Math.random(),2) + Math.pow(Math.random(),2))) // De cada dardo calculo la distancia al centro
-                .filter( distanciaAlCentro -> distanciaAlCentro <= 1)                                             // Me quedo solo con los que están dentro del círculo
-                .count();                                                                                        // Los cuento
+        final int totalDeDardos = 100 * 1000 * 1000;
+        long numeroDeDardosDentro = Arrays.asList(totalDeDardos).stream()
+                .flatMapToInt((numeroDeDardos) -> IntStream.range(0, numeroDeDardos))
+                //.parallel()   // 2 opciones
+                // Como mucho, tantos como Cores tenga
+                // Pero limitado por el número de objetos que tenga el Stream
+                .mapToDouble(numeroDeDardo -> Math.sqrt( Math.pow(Math.random(),2) + Math.pow(Math.random(),2)))// De cada dardo calculo la distancia al centro // double distanciaAlCentro
+                .filter( distanciaAlCentro -> distanciaAlCentro <= 1)                                             // Me quedo solo con los que están dentro del círculo   // IF
+                .count();                                                                                        // Los cuento  // incremental
 
         double estimacionDePI = 4. * numeroDeDardosDentro  / totalDeDardos;                                      // Estimo PI
 

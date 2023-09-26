@@ -250,8 +250,9 @@ BBDD Producción -> ETL -> Datawarehouse (BBDD)
 ## Spark tiene dentro 3 librerías (antes 4)
 
 - Spark core, que es tooodo lo que os he contado
-  Pero... el Spark core es duro de manejar... bastante (MAP-REDUCE). Poca gente que sea capaz de escribir ese tipo de código. Mucha formación y mucha experiencia
-- Spark Streamming: Que nos permite montar procesos no BATCH (eso es Spark CORE) sino procesos que quedan corriendo en un cluster
+  Pero... el Spark core es duro de manejar... bastante (MAP-REDUCE). 
+  Poca gente que sea capaz de escribir ese tipo de código. Mucha formación y mucha experiencia
+- Spark Streaming: Que nos permite montar procesos no BATCH (eso es Spark CORE) sino procesos que quedan corriendo en un cluster
   procesando datos en tiempo real. Esta librería esta DEPRECATED ahora mismo (Solo queda legacy)
   Toda la funcionalidad que tenía se ha llevado a SparkSQL vvv
 - SparkSQL, que ofrece una reimplementación de la librería SparkCore para trabajar con otra sintaxis diferente a la de MapReduce... inspirada en SQL
