@@ -50,7 +50,7 @@ public class ProcesarHashtagsConSpark {
                 .filter(hashtag -> prohibidas.stream().noneMatch(hashtag::contains)) // Me quedo con los que no contienen palabras de la lista de prohibidas
               //.collect(Collectors.toList());                                 // Lo convierto a una lista
                 .collect();                                                    // Lo convierto a una lista
-
+             // LO QUE NOS QUEDA ES DE IDEA FELIZ ! TOTAL ! Tanto que da asco!
         // PASO 4: HAgo lo que sea necesario con el resultado.
         hashtags.forEach(System.out::println);
 

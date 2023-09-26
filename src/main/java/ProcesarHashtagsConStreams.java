@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ProcesarHashtagsConStreams {
 
@@ -15,8 +16,9 @@ public class ProcesarHashtagsConStreams {
          List<String> prohibidas = Arrays.asList(
                  "caca", "culo", "pedo", "pis"
          );
+        Stream<String> tweetsEnStream = tweets.stream();                                // Para cada tweet
 
-        List<String> hashtags = tweets.stream()                                 // Para cada tweet
+        List<String> hashtags = tweetsEnStream                                 // Para cada tweet
                 .filter( tweet -> tweet.contains("#") )                           // Me quedo con los que tienen hashtag
                 .map( tweet -> tweet.replace("#", " #"))        // Añadir un espacio delante del cuadradito
                 .map( tweet -> tweet.split("[ .,_+(){}!?¿'\"<>/@|&-]+"))   // Separo las palabras y los hashtags
