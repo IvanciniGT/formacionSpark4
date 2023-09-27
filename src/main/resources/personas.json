@@ -1,4 +1,4 @@
-{ "nombre": "Iván",  "apellido": "Gonzalez",  "edad": 25,  "email": "jorge@gonzalez.com",  "dni": "12345678T", "cp": "11111" }
-{ "nombre": "Lucas",  "apellido": "Nuñéz",  "edad": 33,  "email": "lucas@sanchez.com",  "dni": "12345678U", "cp": "22222" }
+{ "nombre": "Iván",  "apellido": "Gonzalez",  "edad": 25,  "email": "jorge@gonzalez.com",  "dni": "23T", "cp": "11111" }
+{ "nombre": "Lucas",  "apellido": "Nuñéz",  "edad": 33,  "email": "lucas@sanchez.com",  "dni": "230T", "cp": "22222" }
 { "nombre": "Maria",  "apellido": "Garcia",  "edad": 22,  "email": "http://maria.garcia",  "dni": "12345678V", "cp": "33333" }
-{ "nombre": "Iván",  "apellido": "de Luis",  "edad": 44,  "email": "marta@de.Luis.com", "dni": "12345678W", "cp": "RUINA" }
+{ "nombre": "Iván",  "apellido": "de Luis",  "edad": 44,  "email": "marta@de.Luis.com", "dni": "2300T", "cp": "RUINA" }

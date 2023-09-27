@@ -1,16 +1,18 @@
+package proyecto;
+
 import lombok.*;
-import proyecto.ProyectoFinal;
 
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Persona {
+public class PersonaPF {
     private String nombre;
     private String apellido;
     private int edad;
     private String dni;
     private String email;
+    private String cp;
 
-    public static Persona crearPersona(String nombre, String apellido, int edad, String dni, String email){
-        Persona p = new Persona();
+    public static PersonaPF crearPersona(String nombre, String apellido, int edad, String dni, String email){
+        PersonaPF p = new PersonaPF();
         p.setNombre(nombre);
         p.setApellido(apellido);
         p.setEdad(edad);
@@ -18,9 +20,10 @@ public class Persona {
         p.setEmail(email);
         return p;
     }
+    private static final String LETRAS_DNI= "TRWAGMYFPDXBNJZSQVHLCKE";
 
     public boolean validarDNI(){
-        return Persona.validarDNI(this.dni);
+        return PersonaPF.validarDNI(this.dni);
     }
 
 
@@ -28,9 +31,8 @@ public class Persona {
         return this.email.matches("^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$");
     }
 
-    private static final String LETRAS_DNI= "TRWAGMYFPDXBNJZSQVHLCKE";
-
-    public static Boolean validarDNI(String dni){
+    public static Boolean validarDNI(Object odni){
+        String dni = odni.toString();
         boolean formatoValido= dni.matches("^[0-9]{1,8}[A-Za-z]$");
         if(!formatoValido) return false;
         String parteNumerica = dni.substring(0, dni.length() - 1);

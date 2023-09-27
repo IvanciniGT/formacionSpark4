@@ -1,5 +1,7 @@
 
+import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -79,6 +81,13 @@ public class IntroSparkSQL {
         Dataset<Row> personasEmailValidoSQL = conexion.createDataFrame(personasEmailValidoRDD, Persona.class);
         personasEmailValidoSQL.show();
         // PASO 4: Cerrar la conexión con el cluster
+
+        // SparkSession conexion ... objeto de la librería SQL
+        // JavaSparkContext conexionCore ... objeto de la librería Core
+        SparkContext conexionCore= conexion.sparkContext();
+        //JavaSparkContext conexionCoreJava = new JavaSparkContext(conexionCore);
+
+        //conexionCoreJava -> SparkSession
         conexion.close();
 
     }

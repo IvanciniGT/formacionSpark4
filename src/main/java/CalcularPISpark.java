@@ -17,8 +17,8 @@ public class CalcularPISpark {
         final int totalDeDardos = 10 * 1000 * 1000;
 
         long numeroDeDardosDentro = conexion.parallelize(Arrays.asList(totalDeDardos)/*, 50*/) // Particiones del conjunto de datos (PAQUETES DE TRABAJO)
-                .repartition(50)   // Particiones
                 .flatMap(numeroDeDardos-> IntStream.range(0, numeroDeDardos).iterator())
+                .repartition(50)   // Particiones
                 .mapToDouble(numeroDeDardo -> Math.sqrt( Math.pow(Math.random(),2) + Math.pow(Math.random(),2)))
                 .filter( distanciaAlCentro -> distanciaAlCentro <= 1)
                 .count();

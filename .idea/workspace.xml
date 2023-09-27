@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Calculo PI Streams">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/personas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Proyecto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/proyecto/PersonaPF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notas/dia3.md" beforeDir="false" afterPath="$PROJECT_DIR$/notas/dia3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/personas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/personas.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,17 +58,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="proyecto" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IntroSparkSQL">
-    <configuration name="CalcularPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CalcularPI" />
-      <module name="Curso2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ProyectoFinal">
     <configuration name="CalcularPISpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalcularPISpark" />
       <module name="Curso2" />
@@ -98,13 +91,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProyectoFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proyecto.ProyectoFinal" />
+      <module name="Curso2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proyecto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProyectoFinal" />
         <item itemvalue="Application.IntroSparkSQL" />
         <item itemvalue="Application.ProcesarHashtagsConSpark" />
         <item itemvalue="Application.CalcularPISpark" />
         <item itemvalue="Application.CalcularPIStream" />
-        <item itemvalue="Application.CalcularPI" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +125,7 @@
       <workItem from="1695310411064" duration="7165000" />
       <workItem from="1695646398130" duration="12474000" />
       <workItem from="1695730838436" duration="9598000" />
-      <workItem from="1695795845154" duration="5991000" />
+      <workItem from="1695795845154" duration="14389000" />
     </task>
     <task id="LOCAL-00001" summary="hashtags v1.0">
       <option name="closed" value="true" />
@@ -161,7 +167,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695740100441</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spark SQL">
+      <option name="closed" value="true" />
+      <created>1695825300147</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695825300147</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Proyecto">
+      <option name="closed" value="true" />
+      <created>1695825882804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695825882804</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Proyecto">
+      <option name="closed" value="true" />
+      <created>1695829301069</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695829301069</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +202,8 @@
     <MESSAGE value="hashtags listos para Spark" />
     <MESSAGE value="hashtags en Spark" />
     <MESSAGE value="Calculo PI Streams" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculo PI Streams" />
+    <MESSAGE value="Spark SQL" />
+    <MESSAGE value="Proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto" />
   </component>
 </project>
