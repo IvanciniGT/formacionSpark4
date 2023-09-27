@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Calculo PI Streams">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/personas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalcularPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcularPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalcularPIStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcularPIStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/dia3.md" beforeDir="false" afterPath="$PROJECT_DIR$/notas/dia3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProcesarHashtagsConSpark">
+  <component name="RunManager" selected="Application.IntroSparkSQL">
     <configuration name="CalcularPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalcularPI" />
       <module name="Curso2" />
@@ -81,6 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntroSparkSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroSparkSQL" />
+      <module name="Curso2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcesarHashtagsConSpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProcesarHashtagsConSpark" />
       <module name="Curso2" />
@@ -88,20 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramacionFuncional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramacionFuncional" />
-      <module name="Curso2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntroSparkSQL" />
         <item itemvalue="Application.ProcesarHashtagsConSpark" />
         <item itemvalue="Application.CalcularPISpark" />
         <item itemvalue="Application.CalcularPIStream" />
         <item itemvalue="Application.CalcularPI" />
-        <item itemvalue="Application.ProgramacionFuncional" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +119,7 @@
       <workItem from="1695310411064" duration="7165000" />
       <workItem from="1695646398130" duration="12474000" />
       <workItem from="1695730838436" duration="9598000" />
+      <workItem from="1695795845154" duration="5991000" />
     </task>
     <task id="LOCAL-00001" summary="hashtags v1.0">
       <option name="closed" value="true" />

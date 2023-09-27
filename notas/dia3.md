@@ -13,7 +13,7 @@ Colección inicial de estimaciones
 ---
 
 #SparkSQL:
-Lo que era un Stream<T> -> que en Spark core se llama RDD<T> -> en SparkSQL se llama Dataset<Row>
+Lo que era un Stream<T> -> que en Spark core se llama JavaRDD<T> -> en SparkSQL se llama Dataset<Row>
 Los Row... tienen columnas
 
 Un Dataset tiene una estructura de Tabla.. com si fuera una tabla de una base de datos relacional
@@ -69,3 +69,13 @@ Si leo de un KAFKA:
                             3 bytes: 256*256*256 = 16.777.216
                             4 bytes: 256*256*256*256 = 4.294.967.296
     En 4 bytes tengo el número.
+
+---
+
+# Los 2 grandes formatos que usamos en BIGDATA
+
+- Parquet
+- AVRO
+Los 2 son binarios
+- Parquet: Va orientado a columnas
+- AVRO: Va orientado a filas

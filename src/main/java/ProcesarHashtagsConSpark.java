@@ -66,6 +66,8 @@ public class ProcesarHashtagsConSpark {
                 .take(2)                                                // Es mi función de reducción
                 .forEach( parejita -> System.out.println("Hashtag: " + parejita._2 + " mencionado en " + parejita._1 + " tweets"));
 
+
+
                 // Al final sacar el resultado por pantalla
         // PASO 4: HAgo lo que sea necesario con el resultado.
         //hashtags.forEach(System.out::println);
