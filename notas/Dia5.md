@@ -64,3 +64,13 @@ k
 Esto es proceso lo hemos pensado en modo BATCH
 Llevarlos ahora a modo Streaming. Se simplifica mucho
 Los joins se hacen con la tabla 1 muy pequeña
+
+---
+
+# Comandos de Spark
+
+bin/spark-class org.apache.spark.deploy.master.Master  --help
+bin/spark-class org.apache.spark.deploy.master.Master -h 0.0.0.0
+bin/spark-class org.apache.spark.deploy.worker.Worker --help
+bin/spark-class org.apache.spark.deploy.worker.Worker -h 0.0.0.0 spark://54.216.79.51:7077
+bin/spark-submit --master spark://54.216.79.51:7077 -class CalcularPISpark curso.jar

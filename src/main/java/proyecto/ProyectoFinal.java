@@ -16,7 +16,7 @@ public class ProyectoFinal {
     private static final String FICHERO_PERSONAS_CON_DNI_INVALIDO = "src/main/resources/personasConDNIInvalido.parquet";
     private static final boolean debug = true;
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
         // PASO 1: Abro conexión
         SparkSession conexion = SparkSession.builder()
@@ -86,7 +86,7 @@ public class ProyectoFinal {
 
         personasDNIValido.join(cps, "cp","leftanti").show();
 
-
+        //Thread.currentThread().sleep(1000000);
 
         // PASO 9: Cerrar conexión
         conexion.close();

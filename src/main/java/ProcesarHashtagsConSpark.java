@@ -12,9 +12,10 @@ public class ProcesarHashtagsConSpark {
         // PASO 1: Abrir una conexión con un cluster de Spark... Como si fuera una base de datos
         // Primero, establezco la configuración de la conexión
         SparkConf configuracion = new SparkConf()   // Creo un objeto para albergar la configuración (PATRON BUILDER)
-                                        .setAppName("ProcesarHashtagsConSpark")           // Identifica mi app en el cluster.
+                                        .setAppName("ProcesarHashtagsConSpark") ;          // Identifica mi app en el cluster.
                                       //.setMaster("spark://IP_DEL_MAESTRO:PUERTO");      // Contra que cluster trabajo
-                                        .setMaster("local[2]"); // Esto levanta un cluster con Hadoop y Spark en nuestra máquina
+                                            //      spark://0.0.0.0:7077
+                                        //.setMaster("local[2]"); // Esto levanta un cluster con Hadoop y Spark en nuestra máquina
                                                                 // Dentro de la misma MV en la que corro el programa
                                                                 // Esto está guay para desarrollo
         // Después creo la conexión
@@ -38,7 +39,7 @@ public class ProcesarHashtagsConSpark {
         // PASO 3: Proceso los datos
         //List<String> hashtags =
                 tweetsEnSpark
-                .repartition(200)                                        // Para cada tweet
+                .repartition(2)                                        // Para cada tweet
                 .filter(tweet -> tweet.contains("#"))                           // Me quedo con los que tienen hashtag
                 .map(tweet -> tweet.replace("#", " #"))       // Añadir un espacio delante del cuadradito
                 .map(tweet -> tweet.split("[ .,_+(){}!?¿'\"<>/@|&-]+"))  // Separo las palabras y los hashtags

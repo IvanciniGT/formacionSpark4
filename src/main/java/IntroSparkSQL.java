@@ -14,7 +14,7 @@ public class IntroSparkSQL {
         // PASO 1: Abrir una conexión con el cluster
         SparkSession conexion = SparkSession.builder()
                                             .appName("IntroSQL")
-                                            .master("local[2]")
+                                            //.master("local[2]")
                                             .getOrCreate();
         // PASO 2: Preparar los datos y cargarlos en Spark
         Dataset<Row> datos = conexion.read()        // Trabaja en modo BATCH
@@ -25,6 +25,8 @@ public class IntroSparkSQL {
                                                 //.jdbc
                                                 //.text
                 .json("src/main/resources/personas.json");
+        // .json("hdfs://<NOMBRE|IP>:<PUERTO>/ruta/al/fichero.json")
+        // .json("s3://<BUCKET>/ruta/al/fichero.json"")
 
         datos.show();
         datos.printSchema();
@@ -77,7 +79,10 @@ public class IntroSparkSQL {
             String dni = fila.getString(fila.fieldIndex("dni"));
             return new Persona(nombre, apellido, edad, dni, email);
         });
-        JavaRDD<Persona> personasEmailValidoRDD = datosEnFormatoRDD_Persona.filter(Persona::validarEmail);
+        JavaRDD<Persona> personasEmailValidoRDD = datosEnFormatoRDD_Persona
+                .repartition(50)
+                .filter(Persona::validarEmail);
+
         Dataset<Row> personasEmailValidoSQL = conexion.createDataFrame(personasEmailValidoRDD, Persona.class);
         personasEmailValidoSQL.show();
         // PASO 4: Cerrar la conexión con el cluster

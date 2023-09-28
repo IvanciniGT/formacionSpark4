@@ -1,8 +1,10 @@
 import lombok.*;
 import proyecto.ProyectoFinal;
 
+import java.io.Serializable;
+
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Persona {
+public class Persona implements Serializable {
     private String nombre;
     private String apellido;
     private int edad;

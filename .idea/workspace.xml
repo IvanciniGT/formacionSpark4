@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Proyecto final" />
+    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Proyecto final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas/Dia5.md" beforeDir="false" afterPath="$PROJECT_DIR$/notas/Dia5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProcesarHashtagsConSpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProyectoFinal">
+  <component name="RunManager" selected="Application.IntroSparkSQL">
     <configuration name="CalcularPISpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalcularPISpark" />
       <module name="Curso2" />
@@ -98,10 +106,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProyectoFinal" />
         <item itemvalue="Application.IntroSparkSQL" />
-        <item itemvalue="Application.ProcesarHashtagsConSpark" />
         <item itemvalue="Application.CalcularPISpark" />
+        <item itemvalue="Application.ProyectoFinal" />
+        <item itemvalue="Application.ProcesarHashtagsConSpark" />
         <item itemvalue="Application.CalcularPIStream" />
       </list>
     </recent_temporary>
@@ -117,7 +125,7 @@
       <workItem from="1695310411064" duration="7165000" />
       <workItem from="1695646398130" duration="12474000" />
       <workItem from="1695730838436" duration="9598000" />
-      <workItem from="1695795845154" duration="15309000" />
+      <workItem from="1695795845154" duration="27393000" />
     </task>
     <task id="LOCAL-00001" summary="hashtags v1.0">
       <option name="closed" value="true" />
@@ -191,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695834323879</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Proyecto final">
+      <option name="closed" value="true" />
+      <created>1695911483324</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695911483324</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

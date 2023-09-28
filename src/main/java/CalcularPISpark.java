@@ -9,8 +9,8 @@ public class CalcularPISpark {
 
     public static void main(String[] args) throws Exception {
         SparkConf configuracion = new SparkConf()
-                .setAppName("ProcesarHashtagsConSpark")
-                .setMaster("local[2]");
+                .setAppName("CalcularPI");
+                //.setMaster("spark://54.216.79.51:7077");//local[2]");
 
         JavaSparkContext conexion = new JavaSparkContext(configuracion);
 
