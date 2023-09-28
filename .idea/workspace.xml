@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/proyecto/PersonaPF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalcularPISpark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IntroSparkSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proyecto/ProyectoFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/personas.json" afterDir="false" />
-    </list>
+    <list default="true" id="1b3a84b3-b510-4d14-ab3f-ddfce651e128" name="Changes" comment="Proyecto final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +117,7 @@
       <workItem from="1695310411064" duration="7165000" />
       <workItem from="1695646398130" duration="12474000" />
       <workItem from="1695730838436" duration="9598000" />
-      <workItem from="1695795845154" duration="14389000" />
+      <workItem from="1695795845154" duration="15309000" />
     </task>
     <task id="LOCAL-00001" summary="hashtags v1.0">
       <option name="closed" value="true" />
@@ -191,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695829301069</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Proyecto final">
+      <option name="closed" value="true" />
+      <created>1695834323879</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695834323879</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +204,7 @@
     <MESSAGE value="Calculo PI Streams" />
     <MESSAGE value="Spark SQL" />
     <MESSAGE value="Proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto" />
+    <MESSAGE value="Proyecto final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto final" />
   </component>
 </project>

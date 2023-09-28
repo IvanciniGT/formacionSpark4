@@ -25,3 +25,20 @@ RESTO	12	13	14	15	16	17	18	19	20	21	22
 LETRA	N	J	Z	S	Q	V	H	L	C	K	E
 
 letrasDNI= "TRWAGMYFPDXBNJZSQVHLCKE"
+
+
+
++--------+-----+-----+----+------------------+------+---------+
+|apellido|   cp|  dni|edad|             email|nombre|DNIValido|
++--------+-----+-----+----+------------------+------+---------+
+|Gonzalez|11111|  23T|  25|jorge@gonzalez.com|  Iván|     true|
+|   Nuñéz|22222| 230T|  33| lucas@sanchez.com| Lucas|     true|
+| de Luis|RUINA|2300T|  44| marta@de.Luis.com|  Iván|     true|
++--------+-----+-----+----+------------------+------+---------+
++-----+--------+----+----+------------------+------+---------+
+|   cp|apellido| dni|edad|             email|nombre|DNIValido|
++-----+--------+----+----+------------------+------+---------+
+|11111|Gonzalez| 23T|  25|jorge@gonzalez.com|  Iván|     true|
+|22222|   Nuñéz|230T|  33| lucas@sanchez.com| Lucas|     true|
++-----+--------+----+----+------------------+------+---------+
+

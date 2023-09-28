@@ -46,7 +46,7 @@ public class ProyectoFinal {
                 // Alternativa 1.2: Trabajo con RDD pero de tipo Row
                 JavaPairRDD<Row, Boolean> personasConDNI_Validado2 = datosComoRDD.mapToPair(fila -> {
                     String dni = fila.getString(fila.fieldIndex("dni"));
-                    return new Tuple2<>(fila, !PersonaPF.validarDNI(dni) );
+                    return new Tuple2<>(fila, PersonaPF.validarDNI(dni) );
                 } );
                 Dataset<Row> personasDNIInvalido_Alternativa2 = conexion.createDataFrame(personasConDNI_Validado2.keys(), Row.class);
                 // Alternativa 1.3: Trabajo con RDD pero de tipo Row o no... pero aplicando un Filter (y no un map2Pair)
@@ -79,9 +79,14 @@ public class ProyectoFinal {
         if(debug)personasConInfoExtra.limit(10).show();
 
         // PASO 8: Aquellas personas que no tengán un CP válido, a otro fichero
-        Dataset<Row> personasSinCP = personasDNIValido.except(personasConInfoExtra.select("nombre","apellido","dni","email","edad","cp","DNIValido"));
+        Dataset<Row> personasSinCP = personasDNIValido.select("cp","apellido","dni","edad","email","nombre","DNIValido")
+                          .except(personasConInfoExtra.select("cp","apellido","dni","edad","email","nombre","DNIValido"));
         personasSinCP.write().mode("overwrite").parquet("src/main/resources/personasSinCP.parquet");
         if(debug)personasSinCP.limit(10).show();
+
+        personasDNIValido.join(cps, "cp","leftanti").show();
+
+
 
         // PASO 9: Cerrar conexión
         conexion.close();
